@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhoom 2.0 - RKDF University Dandiya Celebration</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cinzel+Decorative:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dynamic Background & Durga Maa Blinking Eyes System -->
+    <div class="fixed-bg-layer">
+        <!-- Canvas for Floating Garba Particles & Glow -->
+        <canvas id="dandiyaCanvas"></canvas>
+
+        <!-- Big Centered Responsive Durga Maa Blinking Eyes -->
+        <div class="durga-eyes-container">
+            <div class="durga-aura-glow"></div>
+            <div class="durga-image-box">
+                <!-- Clean Durga Maa Image Canvas (No white borders, text cropped) -->
+                <canvas id="durgaEyesCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Navigation Bar with College Logo -->
+    <nav class="top-navbar">
+        <div class="logo-wrapper">
+            <img src="assets/college_logo.jpg" alt="RKDF University Ranchi Logo" class="college-logo">
+            <div class="university-info">
+                <span class="uni-name">RKDF UNIVERSITY</span>
+                <span class="uni-location">RANCHI</span>
+            </div>
+        </div>
+        <div class="nav-festive-tag">
+            <i class="fa-solid fa-om"></i> Jhoom 2.0
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <!-- Event Header -->
+        <header class="event-header">
+            <div class="festive-badge">
+                <i class="fa-solid fa-dharmachakra"></i> Official University Celebration <i class="fa-solid fa-dharmachakra"></i>
+            </div>
+            <h1 class="event-title">JHOOM 2.0</h1>
+            <p class="event-subtitle">“Dance to the Divine Beats of Garba, Raas & Festive Celebration”</p>
+            <div class="header-divider">
+                <span class="dandiya-stick left"></span>
+                <span class="mandala-icon">✦</span>
+                <span class="dandiya-stick right"></span>
+            </div>
+        </header>
+
+        <!-- Top Center QR Code Section -->
+        <section class="qr-section">
+            <div class="qr-card">
+                <div class="qr-frame-corners">
+                    <span class="corner top-left"></span>
+                    <span class="corner top-right"></span>
+                    <span class="corner bottom-left"></span>
+                    <span class="corner bottom-right"></span>
+                </div>
+                <div class="qr-header-tag">
+                    <i class="fa-solid fa-qrcode"></i> Scan QR
+                </div>
+                <div class="qr-code-wrapper">
+                    <img src="assets/event_qr.png" alt="Jhoom 2.0 Official Entry QR Code" class="uploaded-qr-img">
+                </div>
+                <div class="qr-footer-info">
+                    <span class="pulse-dot"></span> Fee Type:- CEO Account Fee
+                </div>
+            </div>
+        </section>
+
+        <!-- Guidelines Header -->
+        <section class="section-heading-wrapper">
+            <h2 class="section-title">University Event – Do’s and Don’ts</h2>
+            <p class="section-subtitle">
+                All students are hereby informed to strictly follow the guidelines mentioned below to ensure that <strong>Jhoom 2.0</strong> is conducted in a safe, disciplined, and dignified manner.
+            </p>
+        </section>
+
+        <!-- Do's and Don'ts Section -->
+        <section class="guidelines-container">
+            <!-- DO'S Card -->
+            <div class="guideline-card dos-card">
+                <div class="card-header dos-header">
+                    <div class="header-icon-box">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="card-title">DO’s</h3>
+                        <span class="card-tagline">Mandatory Guidelines</span>
+                    </div>
+                </div>
+                <ul class="guidelines-list">
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-check"></i></div>
+                        <div class="list-text">Students must report at the designated time and venue as instructed by the University.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-check"></i></div>
+                        <div class="list-text">Students must follow the event theme and dress code and come in proper attire as prescribed for Jhoom 2.0.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-check"></i></div>
+                        <div class="list-text">Students must maintain proper discipline, decorum, and respectful behaviour throughout the event.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-check"></i></div>
+                        <div class="list-text">Students must strictly follow the instructions of the Faculty Coordinators, Event Committee, and University authorities.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-check"></i></div>
+                        <div class="list-text">Students are expected to maintain proper grooming and professional conduct.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-check"></i></div>
+                        <div class="list-text">Students should cooperate with fellow students, faculty members, security personnel, and event coordinators.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-check"></i></div>
+                        <div class="list-text">Students must take care of University property and the event venue.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- DON'TS Card -->
+            <div class="guideline-card donts-card">
+                <div class="card-header donts-header">
+                    <div class="header-icon-box">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div>
+                        <h3 class="card-title">DON’Ts</h3>
+                        <span class="card-tagline">Strictly Prohibited</span>
+                    </div>
+                </div>
+                <ul class="guidelines-list">
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="list-text">Misconduct, indiscipline, abusive language, misbehaviour, fighting, harassment, or any inappropriate activity will not be tolerated.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="list-text">Students must not engage in any activity that damages the reputation, dignity, or discipline of the University.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="list-text">Students must not disturb or disrupt the event, classes, performances, or other University activities.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="list-text">Students must not damage University property, decorations, equipment, or venue facilities.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="list-text">Students must not enter restricted areas or leave the designated venue without permission.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="list-text">Any form of misbehaviour, inappropriate dress, obscene gestures, or unacceptable conduct will invite strict disciplinary action.</div>
+                    </li>
+                    <li>
+                        <div class="list-bullet"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="list-text">Students must strictly adhere to the prescribed theme-based attire.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Terms and Conditions Section -->
+        <section class="terms-section">
+            <div class="terms-card">
+                <div class="terms-seal">
+                    <i class="fa-solid fa-gavel"></i>
+                </div>
+                <h2 class="terms-title">Terms & Conditions</h2>
+                <div class="terms-content">
+                    <p class="terms-intro">
+                        Any student found involved in misconduct, indiscipline, damage to property, harassment, or any other serious violation of University rules shall be liable to:
+                    </p>
+                    
+                    <div class="penalties-box">
+                        <div class="penalty-item">
+                            <div class="penalty-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                            <div class="penalty-details">
+                                <span class="penalty-label">Financial Penalty</span>
+                                <strong class="penalty-value">A fine of ₹2,000/-</strong>
+                            </div>
+                        </div>
+                        <div class="penalty-divider">and</div>
+                        <div class="penalty-item">
+                            <div class="penalty-icon"><i class="fa-solid fa-user-slash"></i></div>
+                            <div class="penalty-details">
+                                <span class="penalty-label">Academic Penalty</span>
+                                <strong class="penalty-value">Suspension from attending classes for the entire semester</strong>
+                                <span class="penalty-note">Subject to the University's disciplinary rules and due process.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="terms-subclause">
+                        <i class="fa-solid fa-shield-halved"></i> The University reserves the right to take additional disciplinary action in serious cases as per the applicable University regulations.
+                    </p>
+
+                    <div class="advisory-callout">
+                        <i class="fa-solid fa-hands-praying"></i>
+                        <p>All students are advised to maintain the dignity and reputation of the University and make <strong>Jhoom 2.0</strong> a safe, respectful, and memorable celebration.</p>
+                    </div>
+
+                    <div class="official-signature">
+                        <div class="sig-line"></div>
+                        <span class="sig-text">By Order of the University Authorities</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="event-footer">
+            <p>© Jhoom 2.0 | RKDF University Ranchi - Discipline & Event Welfare Committee</p>
+        </footer>
+    </div>
+
+    <!-- Custom Application Script -->
+    <script src="script.js"></script>
+</body>
+</html>
