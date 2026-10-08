@@ -18,7 +18,7 @@ function initDurgaMaaBlinkingEyes() {
     const ctx = canvas.getContext('2d');
 
     const durgaImg = new Image();
-    durgaImg.src = 'assets/durga_maa.png';
+    durgaImg.src = 'durga_maa.png';
 
     // Source Crop Box to skip outer white border frame and bottom text:
     // Original PNG: 600 x 600
